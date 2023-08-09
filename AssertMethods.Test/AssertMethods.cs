@@ -132,5 +132,14 @@ namespace AssertMethods.Test
         {
             Assert.IsAssignableFrom<ICalculatorService>(new CalculatorService());
         }
+
+        // Assert.IsType: Tipin türünü kontrol eder.
+
+        [Fact]
+        public void TestIsType()
+        {
+            int number = 42;
+            Assert.IsType<int>(number);
+        }
     }
 }
